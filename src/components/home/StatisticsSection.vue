@@ -105,6 +105,25 @@ const valueIcons = {
 .key-value {
   text-align: center;
   color: var(--color-white);
+  transition: transform var(--transition-base);
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.key-value:nth-child(1) { animation-delay: 0.1s; }
+.key-value:nth-child(2) { animation-delay: 0.2s; }
+.key-value:nth-child(3) { animation-delay: 0.3s; }
+
+.key-value:hover {
+  transform: translateY(-5px);
+}
+
+.key-value__icon {
+  transition: transform var(--transition-base);
+}
+
+.key-value:hover .key-value__icon {
+  transform: scale(1.15) rotate(5deg);
 }
 
 .key-value__icon {

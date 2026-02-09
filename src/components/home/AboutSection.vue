@@ -17,7 +17,7 @@ const { t } = useI18n()
             loading="lazy"
           />
           <div class="about-badge">
-            <span class="about-badge__number">10+</span>
+            <span class="about-badge__number">2025</span>
             <span class="about-badge__text">{{ t('home.about.badge') }}</span>
           </div>
         </div>
@@ -55,6 +55,15 @@ const { t } = useI18n()
 <style scoped>
 .about-section {
   background-color: var(--color-white);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.about-image {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.about-content {
+  animation: slideInRight 0.8s ease-out;
 }
 
 .about-grid {
@@ -73,6 +82,11 @@ const { t } = useI18n()
   height: auto;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-slow);
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
 }
 
 .about-badge {
@@ -85,6 +99,12 @@ const { t } = useI18n()
   border-radius: var(--radius-lg);
   text-align: center;
   box-shadow: var(--shadow-lg);
+  animation: bounce 2s ease-in-out infinite;
+  transition: transform var(--transition-fast);
+}
+
+.about-badge:hover {
+  transform: scale(1.1);
 }
 
 .about-badge__number {

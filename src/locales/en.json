@@ -23,8 +23,8 @@
     },
     "about": {
       "title": "Our Business",
-      "subtitle": "Over 10 years of experience",
-      "badge": "10+ years of experience",
+      "subtitle": "A growing company",
+      "badge": "Year of creation",
       "description": "ID Holding International specializes in the transport of mining products, containers and fuel. Our expertise and modern fleet allow us to offer superior quality services.",
       "cta": "Learn more"
     },
@@ -68,18 +68,18 @@
     "pageTitle": "Our Services",
     "pageSubtitle": "What we do",
     "breadcrumb": "Services",
-    "intro": "Discover all our transport services tailored to the needs of the mining industry, international trade and the oil sector. ID Holding International is your trusted partner for all your transport needs in Ivory Coast and the sub-region. With over 10 years of experience and a fleet of more than 350 modern vehicles, we offer complete and customized logistics solutions. Our expertise covers the transport of mining products (bauxite, manganese, gold, iron), maritime container transport from ports to your warehouses, and secure transport of fuels and petroleum products. We take pride in respecting deadlines, guaranteeing the safety of your goods and providing you with superior quality service. Our qualified teams and vehicles equipped with GPS systems ensure real-time tracking and complete traceability of your shipments.",
+    "intro": "ID Holding International offers specialized transport services to meet the needs of the mining industry, international trade and the oil sector. Founded in 2025, our company began its activities in January 2026 with container transport, then in February 2026 with mining products transport. We offer logistics solutions adapted to your specific needs. Our expertise covers the transport of mining products (bauxite, manganese, gold, iron), maritime container transport from ports to your warehouses, and secure transport of fuels and petroleum products. We are committed to respecting deadlines, guaranteeing the safety of your goods and providing you with quality service. Our qualified teams and vehicles equipped with GPS systems ensure real-time tracking and complete traceability of your shipments.",
     "features": "Key features"
   },
   "fleet": {
     "pageTitle": "Our Fleet",
     "pageSubtitle": "A modern and diverse fleet",
     "breadcrumb": "Fleet",
-    "intro": "With over 350 vehicles, ID Holding has one of the largest fleets in Ivory Coast.",
+    "intro": "ID Holding has a modern and diverse fleet to meet all your transport needs.",
     "total": "total vehicles",
     "characteristics": {
-      "title": "Why choose our fleet?",
-      "subtitle": "4 advantages that make the difference for your transports",
+      "title": "What our partners say",
+      "subtitle": "Testimonials from our clients and partners",
       "items": [
         "Recent vehicles (average age < 5 years)",
         "Regular and preventive maintenance",

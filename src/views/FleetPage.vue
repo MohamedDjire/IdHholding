@@ -6,35 +6,35 @@ import VehicleCard from '@/components/fleet/VehicleCard.vue'
 
 const { t } = useI18n()
 
-// Characteristics with icons - Exact content as provided
+// Partner testimonials - What our partners say
 const characteristics = [
   {
     icon: 'truck',
-    title_fr: 'Large flotte de véhicules',
-    title_en: 'Large fleet of vehicles',
-    description_fr: 'Nous disposons d\'une flotte moderne et diversifiée capable de répondre à tous vos besoins de transport, quelle que soit la nature ou le volume de vos marchandises.',
-    description_en: 'We have a modern and diverse fleet capable of meeting all your transport needs, regardless of the nature or volume of your goods.'
+    title_fr: 'Partenariat de confiance',
+    title_en: 'Trusted partnership',
+    description_fr: '"ID Holding International a su répondre à nos besoins de transport avec professionnalisme et efficacité. Leur équipe est réactive et leurs services de qualité." - Partenaire minier',
+    description_en: '"ID Holding International has been able to meet our transport needs with professionalism and efficiency. Their team is responsive and their services are of quality." - Mining Partner'
   },
   {
     icon: 'wrench',
-    title_fr: 'Entretien et fiabilité',
-    title_en: 'Maintenance and reliability',
-    description_fr: 'Nos véhicules sont soumis à un programme d\'entretien régulier afin de garantir des performances optimales et d\'éviter toute interruption de service.',
-    description_en: 'Our vehicles are subject to a regular maintenance program to ensure optimal performance and avoid any service interruption.'
+    title_fr: 'Service fiable',
+    title_en: 'Reliable service',
+    description_fr: '"Nous apprécions la fiabilité et la ponctualité d\'ID Holding. Leurs véhicules sont bien entretenus et leurs chauffeurs professionnels." - Client logistique',
+    description_en: '"We appreciate the reliability and punctuality of ID Holding. Their vehicles are well maintained and their drivers are professional." - Logistics Client'
   },
   {
     icon: 'target',
-    title_fr: 'Ponctualité et efficacité',
-    title_en: 'Punctuality and efficiency',
-    description_fr: 'Nous assurons le respect strict des délais de livraison grâce à une organisation rigoureuse et une planification optimisée des trajets.',
-    description_en: 'We ensure strict compliance with delivery deadlines thanks to rigorous organization and optimized route planning.'
+    title_fr: 'Excellence opérationnelle',
+    title_en: 'Operational excellence',
+    description_fr: '"Grâce à ID Holding, nous avons pu optimiser notre chaîne logistique. Leur suivi GPS nous permet de suivre nos expéditions en temps réel." - Entreprise exportatrice',
+    description_en: '"Thanks to ID Holding, we have been able to optimize our logistics chain. Their GPS tracking allows us to follow our shipments in real time." - Export Company'
   },
   {
     icon: 'shield',
-    title_fr: 'Sécurité et protection des biens',
-    title_en: 'Safety and property protection',
-    description_fr: 'Vos marchandises sont transportées dans des conditions de sécurité maximales, avec un suivi attentif du chargement jusqu\'à la livraison.',
-    description_en: 'Your goods are transported under maximum security conditions, with careful monitoring from loading to delivery.'
+    title_fr: 'Sécurité garantie',
+    title_en: 'Guaranteed safety',
+    description_fr: '"La sécurité de nos marchandises est une priorité pour ID Holding. Nous leur faisons confiance pour le transport de nos produits les plus sensibles." - Partenaire industriel',
+    description_en: '"The safety of our goods is a priority for ID Holding. We trust them for the transport of our most sensitive products." - Industrial Partner'
   }
 ]
 </script>
@@ -197,12 +197,23 @@ const characteristics = [
   flex-direction: column;
   min-height: 350px;
   overflow: visible;
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
 }
 
+.characteristic-card:nth-child(1) { animation-delay: 0.1s; }
+.characteristic-card:nth-child(2) { animation-delay: 0.2s; }
+.characteristic-card:nth-child(3) { animation-delay: 0.3s; }
+.characteristic-card:nth-child(4) { animation-delay: 0.4s; }
+
 .characteristic-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px) scale(1.02);
   box-shadow: var(--shadow-xl);
   border-color: var(--color-secondary);
+}
+
+.characteristic-card:hover .characteristic-icon {
+  transform: scale(1.1) rotate(5deg);
 }
 
 .characteristic-icon {
@@ -215,6 +226,7 @@ const characteristics = [
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-base);
 }
 
 .characteristic-icon svg {

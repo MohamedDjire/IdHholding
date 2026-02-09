@@ -30,6 +30,12 @@ const { t } = useI18n()
 <style scoped>
 .partners-section {
   background-color: var(--color-white);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.partners-section .section-title,
+.partners-section .section-subtitle {
+  animation: fadeInUp 0.6s ease-out;
 }
 
 .partners-grid {
@@ -45,7 +51,20 @@ const { t } = useI18n()
   align-items: center;
   justify-content: center;
   padding: var(--spacing-lg);
-  transition: all var(--transition-fast);
+  transition: all var(--transition-base);
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.partner-logo:nth-child(1) { animation-delay: 0.1s; }
+.partner-logo:nth-child(2) { animation-delay: 0.2s; }
+.partner-logo:nth-child(3) { animation-delay: 0.3s; }
+.partner-logo:nth-child(4) { animation-delay: 0.4s; }
+.partner-logo:nth-child(5) { animation-delay: 0.5s; }
+.partner-logo:nth-child(6) { animation-delay: 0.6s; }
+
+.partner-logo:hover {
+  transform: translateY(-5px) scale(1.1);
 }
 
 .partner-logo img {
@@ -53,7 +72,7 @@ const { t } = useI18n()
   max-height: 80px;
   filter: grayscale(100%);
   opacity: 0.6;
-  transition: all var(--transition-fast);
+  transition: all var(--transition-base);
 }
 
 .partner-logo:hover img {

@@ -5,8 +5,8 @@ export const team = [
     name: 'Ibrahim Diallo',
     position_fr: 'Directeur Général',
     position_en: 'Chief Executive Officer',
-    bio_fr: 'Avec plus de 20 ans d\'expérience dans le secteur du transport et de la logistique, M. Diallo a fondé ID Holding International avec la vision de devenir le leader du transport industriel en Afrique de l\'Ouest.',
-    bio_en: 'With over 20 years of experience in the transport and logistics sector, Mr. Diallo founded ID Holding International with the vision of becoming the leader in industrial transport in West Africa.',
+    bio_fr: 'Avec plus de 20 ans d\'expérience dans le secteur du transport et de la logistique, M. Diallo a fondé ID Holding International en 2025 avec la vision de devenir le leader du transport industriel en Afrique de l\'Ouest.',
+    bio_en: 'With over 20 years of experience in the transport and logistics sector, Mr. Diallo founded ID Holding International in 2025 with the vision of becoming the leader in industrial transport in West Africa.',
     image: '/images/team/ibrahim-diallo.jpg'
   },
   {

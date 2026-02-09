@@ -62,6 +62,34 @@ const icons = {
 .service-card {
   text-align: center;
   padding: var(--spacing-xl);
+  transition: all var(--transition-base);
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.service-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.service-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.service-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+}
+
+.service-card__icon {
+  transition: transform var(--transition-base);
+}
+
+.service-card:hover .service-card__icon {
+  transform: scale(1.1) rotate(5deg);
 }
 
 .service-card__icon {
@@ -73,6 +101,7 @@ const icons = {
   border-radius: var(--radius-lg);
   margin-bottom: var(--spacing-lg);
   color: var(--color-white);
+  transition: transform var(--transition-base);
 }
 
 .service-card__title {

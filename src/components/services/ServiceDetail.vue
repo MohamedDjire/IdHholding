@@ -1,11 +1,13 @@
 <script setup>
 import { useAppStore } from '@/stores/app'
 import { useI18n } from 'vue-i18n'
+import RotatingText from '@/components/base/RotatingText.vue'
+import TypewriterText from '@/components/base/TypewriterText.vue'
 
 const { t } = useI18n()
 const appStore = useAppStore()
 
-defineProps({
+const props = defineProps({
   service: {
     type: Object,
     required: true
@@ -15,6 +17,9 @@ defineProps({
     default: false
   }
 })
+
+// Mots rotatifs pour le transport de carburant
+const rotatingWords = ['fiables', 'ponctuelles', 'sécurisées', 'efficaces', 'professionnelles']
 </script>
 
 <template>
@@ -33,7 +38,16 @@ defineProps({
       </div>
       <h2 class="service-detail__title">{{ service[`title_${appStore.locale}`] }}</h2>
       <div 
+        class="service-detail__description"
+        v-if="service.id === 3 && appStore.locale === 'fr'"
+      >
+        <p>Notre vocation est de proposer à nos clients des solutions de transport d'hydrocarbures <RotatingText :words="rotatingWords" :interval="3000" />.</p>
+        <p>Le transport de carburant nécessite une expertise particulière et des équipements conformes aux normes internationales. ID Holding dispose d'une flotte de citernes certifiées ADR.</p>
+        <p>Nos chauffeurs sont spécialement formés à la manipulation de produits dangereux et respectent des protocoles de sécurité rigoureux à chaque étape du transport.</p>
+      </div>
+      <div 
         class="service-detail__description" 
+        v-else
         v-html="service[`description_${appStore.locale}`]"
       ></div>
       
@@ -61,7 +75,13 @@ defineProps({
   align-items: center;
   padding: var(--spacing-xl) 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-out;
+  animation-fill-mode: both;
 }
+
+.service-detail:nth-child(1) { animation-delay: 0.1s; }
+.service-detail:nth-child(2) { animation-delay: 0.2s; }
+.service-detail:nth-child(3) { animation-delay: 0.3s; }
 
 .service-detail:last-child {
   border-bottom: none;
@@ -79,12 +99,22 @@ defineProps({
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-base);
+}
+
+.service-detail__image:hover {
+  transform: scale(1.02);
 }
 
 .service-detail__image img {
   width: 100%;
   height: auto;
   display: block;
+  transition: transform var(--transition-slow);
+}
+
+.service-detail__image:hover img {
+  transform: scale(1.05);
 }
 
 .service-detail__content {
@@ -100,6 +130,11 @@ defineProps({
   border-radius: var(--radius-lg);
   margin-bottom: var(--spacing-lg);
   color: var(--color-white);
+  transition: transform var(--transition-base);
+}
+
+.service-detail:hover .service-detail__icon {
+  transform: scale(1.1) rotate(5deg);
 }
 
 .service-detail__title {

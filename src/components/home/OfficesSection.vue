@@ -64,6 +64,11 @@ const offices = [
 <style scoped>
 .offices-section {
   background-color: var(--color-white);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.offices-header {
+  animation: fadeInUp 0.6s ease-out;
 }
 
 .offices-header {
@@ -108,10 +113,20 @@ const offices = [
   box-shadow: var(--shadow-md);
   transition: transform var(--transition-base), box-shadow var(--transition-base);
   background-color: var(--color-white);
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.office-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.office-card:nth-child(2) {
+  animation-delay: 0.4s;
 }
 
 .office-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
   box-shadow: var(--shadow-xl);
 }
 
@@ -141,6 +156,14 @@ const offices = [
   background: linear-gradient(to top, rgba(30, 58, 138, 0.95), transparent);
   padding: var(--spacing-xl);
   color: var(--color-white);
+  transform: translateY(20px);
+  transition: transform var(--transition-base);
+  opacity: 0.9;
+}
+
+.office-card:hover .office-overlay {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .office-overlay h3 {

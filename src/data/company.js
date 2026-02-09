@@ -3,8 +3,8 @@ export const companyInfo = {
   name: 'ID Holding International',
   slogan_fr: 'Leader du Transport Industriel en Côte d\'Ivoire',
   slogan_en: 'Industrial Transport Leader in Ivory Coast',
-  description_fr: 'ID Holding International est une entreprise spécialisée dans le transport de produits miniers, conteneurs et carburant. Avec plus de 10 ans d\'expérience, nous offrons des services de qualité supérieure à travers toute la Côte d\'Ivoire.',
-  description_en: 'ID Holding International is a company specialized in the transport of mining products, containers and fuel. With over 10 years of experience, we offer superior quality services throughout Ivory Coast.',
+  description_fr: 'ID Holding International est une entreprise spécialisée dans le transport de produits miniers, conteneurs et carburant. Créée en 2025, nous offrons des services de qualité supérieure à travers toute la Côte d\'Ivoire.',
+  description_en: 'ID Holding International is a company specialized in the transport of mining products, containers and fuel. Founded in 2025, we offer superior quality services throughout Ivory Coast.',
   
   contact: {
     phone: '+225 27 22 00 00 00',

@@ -2,7 +2,7 @@
 export const statistics = [
   {
     id: 1,
-    value: 950,
+    value: 28,
     suffix: '',
     label_fr: 'Salariés',
     label_en: 'Employees',
@@ -10,43 +10,43 @@ export const statistics = [
   },
   {
     id: 2,
-    value: 18,
+    value: 17,
+    suffix: '',
+    label_fr: 'Véhicules',
+    label_en: 'Vehicles',
+    icon: 'truck'
+  },
+  {
+    id: 3,
+    value: 3,
     suffix: '',
     label_fr: 'Citernes',
     label_en: 'Tankers',
     icon: 'tanker'
   },
   {
-    id: 3,
-    value: 75,
+    id: 4,
+    value: 3,
     suffix: '',
     label_fr: 'Plateaux',
     label_en: 'Flatbeds',
     icon: 'flatbed'
   },
   {
-    id: 4,
-    value: 55,
+    id: 5,
+    value: 3,
     suffix: '',
     label_fr: 'Camions Benne',
     label_en: 'Dump Trucks',
     icon: 'dump-truck'
   },
   {
-    id: 5,
-    value: 120,
-    suffix: '',
-    label_fr: 'Tracteurs',
-    label_en: 'Tractors',
-    icon: 'tractor'
-  },
-  {
     id: 6,
-    value: 60,
+    value: 2,
     suffix: '',
-    label_fr: 'Porteurs',
-    label_en: 'Carriers',
-    icon: 'carrier'
+    label_fr: 'Chargeuses',
+    label_en: 'Loaders',
+    icon: 'loader'
   }
 ]
 

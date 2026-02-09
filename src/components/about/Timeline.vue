@@ -13,7 +13,17 @@ const appStore = useAppStore()
       :class="['timeline__item', { 'timeline__item--right': index % 2 !== 0 }]"
     >
       <div class="timeline__content">
-        <span class="timeline__year">{{ item.year }}</span>
+        <span class="timeline__year">
+          <template v-if="item.month">
+            {{ item[`month_${appStore.locale}`] || item.month }} {{ item.year }}
+          </template>
+          <template v-else-if="item.year_en || item.year === 'Avenir'">
+            {{ item[`year_${appStore.locale}`] || item.year }}
+          </template>
+          <template v-else>
+            {{ item.year }}
+          </template>
+        </span>
         <h3 class="timeline__title">{{ item[`title_${appStore.locale}`] }}</h3>
         <p class="timeline__description">{{ item[`description_${appStore.locale}`] }}</p>
       </div>

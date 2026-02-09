@@ -34,6 +34,14 @@ defineProps({
 .vehicle-card {
   overflow: hidden;
   padding: 0;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
 }
 
 .vehicle-card__image {

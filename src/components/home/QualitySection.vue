@@ -52,6 +52,15 @@ const { t } = useI18n()
 <style scoped>
 .quality-section {
   background-color: var(--color-bg);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.quality-content {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.quality-image {
+  animation: slideInRight 0.8s ease-out;
 }
 
 .quality-grid {
@@ -100,6 +109,19 @@ const { t } = useI18n()
   background-color: var(--color-white);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.quality-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.quality-badge:hover svg,
+.quality-badge:hover span {
+  color: var(--color-white);
 }
 
 .quality-badge svg {
@@ -122,6 +144,11 @@ const { t } = useI18n()
   height: auto;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-slow);
+}
+
+.quality-image:hover img {
+  transform: scale(1.05);
 }
 
 @media (max-width: 1024px) {

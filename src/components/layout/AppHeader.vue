@@ -45,6 +45,16 @@ onMounted(() => {
         </router-link>
       </nav>
 
+      <!-- Dashboard Link -->
+      <a 
+        href="mailto:contact@idholding-international.com" 
+        class="header__dashboard"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Dashboard
+      </a>
+
       <!-- Language Switcher -->
       <div class="header__lang">
         <LanguageSwitcher />
@@ -138,6 +148,28 @@ onMounted(() => {
 
 .header__nav-link:hover .header__nav-link-main {
   color: var(--color-secondary);
+}
+
+/* Dashboard Link */
+.header__dashboard {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 var(--spacing-lg);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header__dashboard:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
 }
 
 /* Language Switcher - Right */

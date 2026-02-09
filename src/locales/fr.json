@@ -23,8 +23,8 @@
     },
     "about": {
       "title": "Notre métier",
-      "subtitle": "Plus de 10 ans d'expérience",
-      "badge": "10+ années d'expérience",
+      "subtitle": "Une entreprise en croissance",
+      "badge": "Année de création",
       "description": "ID Holding International est spécialisé dans le transport de produits miniers, conteneurs et carburant. Notre expertise et notre flotte moderne nous permettent d'offrir des services de qualité supérieure.",
       "cta": "En savoir plus"
     },
@@ -68,18 +68,18 @@
     "pageTitle": "Nos Activités",
     "pageSubtitle": "Ce que nous faisons",
     "breadcrumb": "Activités",
-    "intro": "Découvrez l'ensemble de nos services de transport adaptés aux besoins de l'industrie minière, du commerce international et du secteur pétrolier. ID Holding International est votre partenaire de confiance pour tous vos besoins de transport en Côte d'Ivoire et dans la sous-région. Avec plus de 10 ans d'expérience et une flotte de plus de 350 véhicules modernes, nous offrons des solutions logistiques complètes et sur mesure. Notre expertise couvre le transport de produits miniers (bauxite, manganèse, or, fer), le transport de conteneurs maritimes depuis les ports vers vos entrepôts, et le transport sécurisé de carburants et produits pétroliers. Nous mettons un point d'honneur à respecter les délais, à garantir la sécurité de vos marchandises et à vous offrir un service de qualité supérieure. Nos équipes qualifiées et nos véhicules équipés de systèmes GPS vous assurent un suivi en temps réel et une traçabilité complète de vos expéditions.",
+    "intro": "ID Holding International propose des services de transport spécialisés pour répondre aux besoins de l'industrie minière, du commerce international et du secteur pétrolier. Créée en 2025, notre entreprise débute ses activités en janvier 2026 avec le transport de conteneurs, puis en février 2026 avec le transport de produits miniers. Nous offrons des solutions logistiques adaptées à vos besoins spécifiques. Notre expertise couvre le transport de produits miniers (bauxite, manganèse, or, fer), le transport de conteneurs maritimes depuis les ports vers vos entrepôts, et le transport sécurisé de carburants et produits pétroliers. Nous nous engageons à respecter les délais, garantir la sécurité de vos marchandises et vous offrir un service de qualité. Nos équipes qualifiées et nos véhicules équipés de systèmes GPS vous assurent un suivi en temps réel et une traçabilité complète de vos expéditions.",
     "features": "Points forts"
   },
   "fleet": {
     "pageTitle": "Notre Parc Automobile",
     "pageSubtitle": "Une flotte moderne et diversifiée",
     "breadcrumb": "Parc Automobile",
-    "intro": "Avec plus de 350 véhicules, ID Holding dispose d'une des flottes les plus importantes de Côte d'Ivoire.",
+    "intro": "ID Holding dispose d'une flotte moderne et diversifiée pour répondre à tous vos besoins de transport.",
     "total": "véhicules au total",
     "characteristics": {
-      "title": "Pourquoi choisir notre flotte ?",
-      "subtitle": "4 avantages qui font la différence pour vos transports",
+      "title": "Que disent nos partenaires",
+      "subtitle": "Témoignages de nos clients et partenaires",
       "items": [
         "Véhicules récents (âge moyen < 5 ans)",
         "Entretien régulier et préventif",
