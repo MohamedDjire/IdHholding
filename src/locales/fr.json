@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "home": "ACCUEIL",
+    "homeSubtitle": "BIENVENUE CHEZ ID HOLDING",
+    "about": "À PROPOS DE NOUS",
+    "aboutSubtitle": "TOUT SAVOIR SUR NOUS",
+    "services": "NOS ACTIVITÉS",
+    "servicesSubtitle": "CE QUE NOUS FAISONS",
+    "fleet": "PARC AUTOMOBILE",
+    "fleetSubtitle": "NOTRE FLOTTE",
+    "contact": "CONTACTS",
+    "contactSubtitle": "TOUJOURS À VOTRE ÉCOUTE"
+  },
+  "home": {
+    "hero": {
+      "title": "Leader du Transport Industriel",
+      "subtitle": "Excellence et Fiabilité"
+    },
+    "services": {
+      "title": "Ce que nous faisons",
+      "subtitle": "Des solutions de transport adaptées à vos besoins",
+      "learnMore": "En savoir +"
+    },
+    "about": {
+      "title": "Notre métier",
+      "subtitle": "Plus de 10 ans d'expérience",
+      "badge": "10+ années d'expérience",
+      "description": "ID Holding International est spécialisé dans le transport de produits miniers, conteneurs et carburant. Notre expertise et notre flotte moderne nous permettent d'offrir des services de qualité supérieure.",
+      "cta": "En savoir plus"
+    },
+    "stats": {
+      "title": "Nos Chiffres Clés",
+      "subtitle": "Des résultats qui parlent d'eux-mêmes"
+    },
+    "quality": {
+      "title": "Démarche Qualité",
+      "description": "Notre engagement envers la qualité et la sécurité se traduit par des certifications internationales et des procédures rigoureuses.",
+      "policy": "Politique qualité",
+      "certificate": "Certificat"
+    },
+    "partners": {
+      "title": "Nos Partenaires",
+      "subtitle": "Ils nous font confiance"
+    }
+  },
+  "about": {
+    "pageTitle": "À Propos de Nous",
+    "breadcrumb": "À propos",
+    "presentation": {
+      "title": "Qui sommes-nous ?",
+      "mission": "Notre Mission",
+      "vision": "Notre Vision"
+    },
+    "history": {
+      "title": "Notre Histoire"
+    },
+    "values": {
+      "title": "Nos Valeurs"
+    },
+    "team": {
+      "title": "Équipe Dirigeante"
+    },
+    "quality": {
+      "title": "Démarche Qualité & HSE"
+    }
+  },
+  "services": {
+    "pageTitle": "Nos Activités",
+    "pageSubtitle": "Ce que nous faisons",
+    "breadcrumb": "Activités",
+    "intro": "Découvrez l'ensemble de nos services de transport adaptés aux besoins de l'industrie minière, du commerce international et du secteur pétrolier. ID Holding International est votre partenaire de confiance pour tous vos besoins de transport en Côte d'Ivoire et dans la sous-région. Avec plus de 10 ans d'expérience et une flotte de plus de 350 véhicules modernes, nous offrons des solutions logistiques complètes et sur mesure. Notre expertise couvre le transport de produits miniers (bauxite, manganèse, or, fer), le transport de conteneurs maritimes depuis les ports vers vos entrepôts, et le transport sécurisé de carburants et produits pétroliers. Nous mettons un point d'honneur à respecter les délais, à garantir la sécurité de vos marchandises et à vous offrir un service de qualité supérieure. Nos équipes qualifiées et nos véhicules équipés de systèmes GPS vous assurent un suivi en temps réel et une traçabilité complète de vos expéditions.",
+    "features": "Points forts"
+  },
+  "fleet": {
+    "pageTitle": "Notre Parc Automobile",
+    "pageSubtitle": "Une flotte moderne et diversifiée",
+    "breadcrumb": "Parc Automobile",
+    "intro": "Avec plus de 350 véhicules, ID Holding dispose d'une des flottes les plus importantes de Côte d'Ivoire.",
+    "total": "véhicules au total",
+    "characteristics": {
+      "title": "Pourquoi choisir notre flotte ?",
+      "subtitle": "4 avantages qui font la différence pour vos transports",
+      "items": [
+        "Véhicules récents (âge moyen < 5 ans)",
+        "Entretien régulier et préventif",
+        "Équipements GPS pour suivi en temps réel",
+        "Conformité aux normes de sécurité"
+      ]
+    }
+  },
+  "contact": {
+    "pageTitle": "Contactez-Nous",
+    "pageSubtitle": "Nous sommes à votre écoute",
+    "breadcrumb": "Contacts",
+    "info": {
+      "title": "Nos Coordonnées",
+      "phone": "Téléphone",
+      "email": "Email",
+      "address": "Adresse",
+      "hours": "Horaires d'ouverture"
+    },
+    "social": {
+      "title": "Suivez-nous"
+    },
+    "map": {
+      "title": "Notre localisation"
+    }
+  },
+  "footer": {
+    "description": "Leader du transport de produits miniers, conteneurs et carburant en Côte d'Ivoire.",
+    "references": "Références",
+    "aboutLinks": "À Propos",
+    "activitiesLinks": "Activités",
+    "menuLinks": "Menu",
+    "copyright": "© 2026 ID Holding International. Tous droits réservés.",
+    "madeBy": "Réalisé par"
+  },
+  "common": {
+    "learnMore": "En savoir plus",
+    "contactUs": "Contactez-nous",
+    "home": "Accueil"
+  }
+}

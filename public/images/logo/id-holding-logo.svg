@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#172e6e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- White background -->
+  <rect width="400" height="200" fill="white"/>
+  
+  <!-- Stylized ID Letters -->
+  <g transform="translate(20, 10)">
+    <!-- Letter I (Orange, italicized) -->
+    <rect x="0" y="5" width="22" height="70" fill="url(#orangeGrad)" rx="6" transform="skewX(-5)"/>
+    
+    <!-- Letter D (Blue, bold) -->
+    <path d="M 28 5 L 28 80 L 110 80 Q 125 80 125 42.5 Q 125 5 110 5 Z" fill="url(#blueGrad)"/>
+    <rect x="28" y="5" width="22" height="75" fill="url(#blueGrad)"/>
+  </g>
+  
+  <!-- Transport Vehicles -->
+  <g transform="translate(20, 85)">
+    <!-- Dump Truck (Left) - Camion Benne -->
+    <rect x="0" y="30" width="50" height="30" fill="url(#orangeGrad)" rx="3"/>
+    <rect x="5" y="25" width="40" height="12" fill="#1e3a8a"/>
+    <rect x="8" y="15" width="34" height="12" fill="#64748b" rx="2"/>
+    <circle cx="12" cy="65" r="6" fill="#1e3a8a"/>
+    <circle cx="38" cy="65" r="6" fill="#1e3a8a"/>
+    
+    <!-- Container Truck (Middle) -->
+    <rect x="60" y="30" width="50" height="30" fill="url(#orangeGrad)" rx="3"/>
+    <rect x="65" y="25" width="40" height="12" fill="#1e3a8a"/>
+    <rect x="70" y="30" width="30" height="25" fill="#2563eb" stroke="#1e3a8a" stroke-width="1.5">
+      <line x1="75" y1="35" x2="95" y2="35" stroke="#1e3a8a" stroke-width="1"/>
+      <line x1="75" y1="42" x2="95" y2="42" stroke="#1e3a8a" stroke-width="1"/>
+      <line x1="75" y1="49" x2="95" y2="49" stroke="#1e3a8a" stroke-width="1"/>
+    </rect>
+    <circle cx="70" cy="65" r="6" fill="#1e3a8a"/>
+    <circle cx="100" cy="65" r="6" fill="#1e3a8a"/>
+    
+    <!-- Tanker Truck (Right) - Camion Citerne -->
+    <rect x="120" y="30" width="50" height="30" fill="url(#orangeGrad)" rx="3"/>
+    <rect x="125" y="25" width="40" height="12" fill="#1e3a8a"/>
+    <ellipse cx="145" cy="42" rx="18" ry="15" fill="#2563eb" stroke="#1e3a8a" stroke-width="1.5"/>
+    <circle cx="145" cy="42" r="3" fill="#1e3a8a"/>
+    <circle cx="130" cy="65" r="6" fill="#1e3a8a"/>
+    <circle cx="160" cy="65" r="6" fill="#1e3a8a"/>
+  </g>
+  
+  <!-- Company Name -->
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#f97316" text-anchor="middle" letter-spacing="0.8px">ID HOLDING INTERNATIONAL</text>
+  
+  <!-- Tagline -->
+  <text x="200" y="175" font-family="Arial, sans-serif" font-size="13" fill="#1e3a8a" text-anchor="middle" letter-spacing="0.3px">Transporter pour l'industrie</text>
+</svg>

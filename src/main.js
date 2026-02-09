@@ -1,5 +1,20 @@
+// src/main.js
 import { createApp } from 'vue'
-import './style.css'
+import { createPinia } from 'pinia'
 import App from './App.vue'
+import router from './router'
+import i18n from './i18n'
 
-createApp(App).mount('#app')
+// Import global CSS
+import './assets/css/main.css'
+
+// Create Vue app
+const app = createApp(App)
+
+// Use plugins
+app.use(createPinia())
+app.use(router)
+app.use(i18n)
+
+// Mount app
+app.mount('#app')

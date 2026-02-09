@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "home": "HOME",
+    "homeSubtitle": "WELCOME TO ID HOLDING",
+    "about": "ABOUT US",
+    "aboutSubtitle": "KNOW EVERYTHING ABOUT US",
+    "services": "OUR ACTIVITIES",
+    "servicesSubtitle": "WHAT WE DO",
+    "fleet": "OUR FLEET",
+    "fleetSubtitle": "OUR VEHICLES",
+    "contact": "CONTACTS",
+    "contactSubtitle": "ALWAYS AT YOUR SERVICE"
+  },
+  "home": {
+    "hero": {
+      "title": "Industrial Transport Leader",
+      "subtitle": "Excellence and Reliability"
+    },
+    "services": {
+      "title": "What We Do",
+      "subtitle": "Transport solutions tailored to your needs",
+      "learnMore": "Learn more"
+    },
+    "about": {
+      "title": "Our Business",
+      "subtitle": "Over 10 years of experience",
+      "badge": "10+ years of experience",
+      "description": "ID Holding International specializes in the transport of mining products, containers and fuel. Our expertise and modern fleet allow us to offer superior quality services.",
+      "cta": "Learn more"
+    },
+    "stats": {
+      "title": "Our Key Figures",
+      "subtitle": "Results that speak for themselves"
+    },
+    "quality": {
+      "title": "Quality Approach",
+      "description": "Our commitment to quality and safety is reflected in international certifications and rigorous procedures.",
+      "policy": "Quality policy",
+      "certificate": "Certificate"
+    },
+    "partners": {
+      "title": "Our Partners",
+      "subtitle": "They trust us"
+    }
+  },
+  "about": {
+    "pageTitle": "About Us",
+    "breadcrumb": "About",
+    "presentation": {
+      "title": "Who are we?",
+      "mission": "Our Mission",
+      "vision": "Our Vision"
+    },
+    "history": {
+      "title": "Our History"
+    },
+    "values": {
+      "title": "Our Values"
+    },
+    "team": {
+      "title": "Leadership Team"
+    },
+    "quality": {
+      "title": "Quality & HSE Approach"
+    }
+  },
+  "services": {
+    "pageTitle": "Our Services",
+    "pageSubtitle": "What we do",
+    "breadcrumb": "Services",
+    "intro": "Discover all our transport services tailored to the needs of the mining industry, international trade and the oil sector. ID Holding International is your trusted partner for all your transport needs in Ivory Coast and the sub-region. With over 10 years of experience and a fleet of more than 350 modern vehicles, we offer complete and customized logistics solutions. Our expertise covers the transport of mining products (bauxite, manganese, gold, iron), maritime container transport from ports to your warehouses, and secure transport of fuels and petroleum products. We take pride in respecting deadlines, guaranteeing the safety of your goods and providing you with superior quality service. Our qualified teams and vehicles equipped with GPS systems ensure real-time tracking and complete traceability of your shipments.",
+    "features": "Key features"
+  },
+  "fleet": {
+    "pageTitle": "Our Fleet",
+    "pageSubtitle": "A modern and diverse fleet",
+    "breadcrumb": "Fleet",
+    "intro": "With over 350 vehicles, ID Holding has one of the largest fleets in Ivory Coast.",
+    "total": "total vehicles",
+    "characteristics": {
+      "title": "Why choose our fleet?",
+      "subtitle": "4 advantages that make the difference for your transports",
+      "items": [
+        "Recent vehicles (average age < 5 years)",
+        "Regular and preventive maintenance",
+        "GPS equipment for real-time tracking",
+        "Compliance with safety standards"
+      ]
+    }
+  },
+  "contact": {
+    "pageTitle": "Contact Us",
+    "pageSubtitle": "We are here to help",
+    "breadcrumb": "Contact",
+    "info": {
+      "title": "Our Contact Details",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "hours": "Opening hours"
+    },
+    "social": {
+      "title": "Follow us"
+    },
+    "map": {
+      "title": "Our location"
+    }
+  },
+  "footer": {
+    "description": "Leader in mining products, containers and fuel transport in Ivory Coast.",
+    "references": "References",
+    "aboutLinks": "About",
+    "activitiesLinks": "Services",
+    "menuLinks": "Menu",
+    "copyright": "© 2026 ID Holding International. All rights reserved.",
+    "madeBy": "Made by"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "contactUs": "Contact us",
+    "home": "Home"
+  }
+}
