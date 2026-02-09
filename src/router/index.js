@@ -41,10 +41,6 @@ const routes = [
     meta: {
       title: 'Contactez-nous - ID Holding International'
     }
-  },
-  {
-    path: '/:pathMatch(.*)*',
-    redirect: '/'
   }
 ]
 
