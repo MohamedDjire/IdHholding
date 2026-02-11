@@ -8,8 +8,8 @@ const { t } = useI18n()
 <template>
   <section class="partners-section section">
     <div class="container">
-      <h2 class="section-title">{{ t('home.partners.title') }}</h2>
-      <p class="section-subtitle">{{ t('home.partners.subtitle') }}</p>
+      <span class="section-label">{{ t('home.partners.title') }}</span>
+      <h2 class="section-title">{{ t('home.partners.subtitle') }}</h2>
 
       <div class="partners-grid">
         <a 
@@ -33,8 +33,18 @@ const { t } = useI18n()
   animation: fadeIn 0.8s ease-out;
 }
 
-.partners-section .section-title,
-.partners-section .section-subtitle {
+.section-label {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--spacing-sm);
+}
+
+.partners-section .section-title {
   animation: fadeInUp 0.6s ease-out;
 }
 

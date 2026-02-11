@@ -15,8 +15,9 @@ const { t } = useI18n()
       background-image="/images/offices/reception-moderne.jpg"
     />
 
-    <section class="section">
+    <section class="section contact-section">
       <div class="container">
+        <span class="section-label">{{ t('contact.breadcrumb') }}</span>
         <div class="contact-grid">
           <!-- Contact Info -->
           <ContactInfo />
@@ -40,6 +41,21 @@ const { t } = useI18n()
 </template>
 
 <style scoped>
+.section-label {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-section .container {
+  animation: fadeInUp 0.6s ease-out;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

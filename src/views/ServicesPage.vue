@@ -71,8 +71,9 @@ const { t } = useI18n()
     </section>
 
     <!-- Services Details -->
-    <section class="section section--compact">
+    <section class="section section--compact section-details">
       <div class="container">
+        <span class="section-label">{{ t('services.features') }}</span>
         <ServiceDetail 
           v-for="(service, index) in services" 
           :key="service.id"
@@ -88,6 +89,21 @@ const { t } = useI18n()
 .section--compact {
   padding-top: var(--spacing-xl);
   padding-bottom: var(--spacing-xl);
+}
+
+.section-details .section-label {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-details .container {
+  animation: fadeInUp 0.6s ease-out;
 }
 
 .intro-section {

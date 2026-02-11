@@ -11,6 +11,7 @@ const { t } = useI18n()
       <div class="quality-grid">
         <!-- Content -->
         <div class="quality-content">
+          <span class="section-label">Qualité & HSE</span>
           <span class="quality-subtitle">HSE</span>
           <h2 class="quality-title">{{ t('home.quality.title') }}</h2>
           <p class="quality-description">{{ t('home.quality.description') }}</p>
@@ -57,6 +58,17 @@ const { t } = useI18n()
 
 .quality-content {
   animation: slideInLeft 0.8s ease-out;
+}
+
+.section-label {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--spacing-sm);
 }
 
 .quality-image {

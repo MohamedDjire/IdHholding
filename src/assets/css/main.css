@@ -83,9 +83,16 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
+  overflow-x: hidden;
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.6;
@@ -178,6 +185,11 @@ img {
 .section-title {
   text-align: center;
   margin-bottom: var(--spacing-md);
+}
+
+/* Scroll anchor offset for fixed header (e.g. /activites#transport-miniers) */
+main [id] {
+  scroll-margin-top: 100px;
 }
 
 .section-subtitle {

@@ -49,12 +49,14 @@ const characteristics = [
     />
 
     <!-- Introduction -->
-    <section class="section">
+    <section class="section fleet-intro">
       <div class="container">
-        <p class="intro-text">{{ t('fleet.intro') }}</p>
+        <div class="intro-frame">
+          <p class="intro-text">{{ t('fleet.intro') }}</p>
+        </div>
         
         <!-- Total Vehicles -->
-        <div class="total-vehicles">
+        <div class="total-vehicles total-vehicles--animated">
           <span class="total-vehicles__number">{{ totalVehicles }}</span>
           <span class="total-vehicles__label">{{ t('fleet.total') }}</span>
         </div>
@@ -62,8 +64,9 @@ const characteristics = [
     </section>
 
     <!-- Vehicles Grid -->
-    <section class="section bg-gray">
+    <section class="section bg-gray section-animate">
       <div class="container">
+        <span class="section-label">{{ t('fleet.breadcrumb') }}</span>
         <div class="vehicles-grid">
           <VehicleCard 
             v-for="vehicle in vehicles" 
@@ -75,8 +78,9 @@ const characteristics = [
     </section>
 
     <!-- Characteristics -->
-    <section class="section bg-gray">
+    <section class="section bg-gray section-animate">
       <div class="container">
+        <span class="section-label">Caractéristiques</span>
         <div class="characteristics-header">
           <h2 class="section-title">{{ t('fleet.characteristics.title') }}</h2>
           <p class="section-subtitle">{{ t('fleet.characteristics.subtitle') }}</p>
@@ -123,13 +127,45 @@ const characteristics = [
 </template>
 
 <style scoped>
+.fleet-intro {
+  padding-bottom: var(--spacing-3xl);
+  background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-white) 100%);
+}
+
+.intro-frame {
+  max-width: 820px;
+  margin: 0 auto var(--spacing-2xl);
+  padding: var(--spacing-2xl);
+  background: var(--color-white);
+  border: 1px solid rgba(30, 58, 138, 0.12);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.8s ease-out;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.intro-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+}
+
+.intro-frame:hover {
+  box-shadow: var(--shadow-lg);
+}
+
 .intro-text {
   font-size: 1.125rem;
-  color: var(--color-gray);
+  color: var(--color-gray-dark);
   line-height: 1.8;
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto var(--spacing-2xl);
+  margin: 0;
 }
 
 .total-vehicles {
@@ -137,12 +173,19 @@ const characteristics = [
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   color: var(--color-white);
-  padding: var(--spacing-2xl);
-  border-radius: var(--radius-lg);
-  max-width: 300px;
+  padding: var(--spacing-2xl) var(--spacing-3xl);
+  border-radius: var(--radius-xl);
+  min-width: 280px;
+  max-width: 380px;
   margin: 0 auto;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.total-vehicles--animated {
+  animation: fadeInUp 0.6s ease-out 0.2s both;
 }
 
 .total-vehicles__number {
@@ -151,13 +194,30 @@ const characteristics = [
   font-weight: 700;
   line-height: 1;
   color: var(--color-secondary);
+  margin-bottom: var(--spacing-sm);
 }
 
 .total-vehicles__label {
-  font-size: 1.125rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.section-label {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--spacing-md);
+}
+
+.section-animate .container {
+  animation: fadeInUp 0.5s ease-out;
 }
 
 .vehicles-grid {
@@ -277,12 +337,25 @@ const characteristics = [
 }
 
 @media (max-width: 768px) {
+  .intro-frame {
+    padding: var(--spacing-lg);
+  }
+  
   .vehicles-grid {
     grid-template-columns: 1fr;
   }
   
+  .total-vehicles {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    min-width: 260px;
+  }
+  
   .total-vehicles__number {
     font-size: 3rem;
+  }
+  
+  .total-vehicles__label {
+    font-size: 0.9rem;
   }
   
   .characteristics-grid {

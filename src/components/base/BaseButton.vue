@@ -24,6 +24,10 @@ const props = defineProps({
   disabled: {
     type: Boolean,
     default: false
+  },
+  showArrow: {
+    type: Boolean,
+    default: false
   }
 })
 
@@ -52,6 +56,9 @@ const componentProps = computed(() => {
 <template>
   <component :is="component" :class="classes" v-bind="componentProps">
     <slot />
+    <svg v-if="showArrow" class="base-button__arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
   </component>
 </template>
 
@@ -68,6 +75,15 @@ const componentProps = computed(() => {
   cursor: pointer;
   transition: all var(--transition-fast);
   text-decoration: none;
+}
+
+.base-button__arrow {
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.base-button:hover .base-button__arrow {
+  transform: translateX(4px);
 }
 
 /* Sizes */

@@ -80,16 +80,39 @@ onUnmounted(() => {
       </div>
     </div>
 
+    <!-- Décor style SADA : lignes, badge, icônes -->
+    <div class="hero-slider__decor" aria-hidden="true">
+      <div class="hero-slider__lines">
+        <span class="hero-slider__line hero-slider__line--1"></span>
+        <span class="hero-slider__line hero-slider__line--2"></span>
+        <span class="hero-slider__line hero-slider__line--3"></span>
+        <span class="hero-slider__line hero-slider__line--4"></span>
+        <span class="hero-slider__line hero-slider__line--5"></span>
+        <span class="hero-slider__line hero-slider__line--6"></span>
+      </div>
+      <div class="hero-slider__float-icon hero-slider__float-icon--tr">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+      </div>
+      <div class="hero-slider__float-icon hero-slider__float-icon--bl">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/></svg>
+      </div>
+    </div>
+
     <!-- Content (always visible above slides) -->
     <div class="hero-slider__content container">
       <Transition name="fade-up" mode="out-in">
-        <div :key="currentSlide">
-          <span class="hero-slider__subtitle">{{ getLocalizedField('subtitle') }}</span>
+        <div :key="currentSlide" class="hero-slider__content-inner">
+          <div class="hero-slider__subtitle-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>{{ getLocalizedField('subtitle') }}</span>
+          </div>
           <h1 class="hero-slider__title">{{ getLocalizedField('title') }}</h1>
           <p class="hero-slider__description">{{ getLocalizedField('description') }}</p>
-          <BaseButton :to="currentSlideData.link" size="lg">
-            {{ getLocalizedField('cta') }}
-          </BaseButton>
+          <div class="hero-slider__ctas">
+            <BaseButton :to="currentSlideData.link" size="lg" show-arrow>
+              {{ getLocalizedField('cta') }}
+            </BaseButton>
+          </div>
         </div>
       </Transition>
     </div>
@@ -236,6 +259,120 @@ onUnmounted(() => {
   z-index: 2;
 }
 
+/* Décor style SADA */
+.hero-slider__decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.hero-slider__lines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140%;
+  height: 140%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-slider__line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 50%;
+  background: linear-gradient(to bottom, transparent, rgba(249, 115, 22, 0.15), transparent);
+  transform-origin: center top;
+  animation: heroLinePulse 4s ease-in-out infinite;
+}
+
+.hero-slider__line--1 { transform: translate(-50%, -100%) rotate(0deg); }
+.hero-slider__line--2 { transform: translate(-50%, -100%) rotate(60deg); animation-delay: 0.3s; }
+.hero-slider__line--3 { transform: translate(-50%, -100%) rotate(120deg); animation-delay: 0.6s; }
+.hero-slider__line--4 { transform: translate(-50%, -100%) rotate(180deg); animation-delay: 0.2s; }
+.hero-slider__line--5 { transform: translate(-50%, -100%) rotate(240deg); animation-delay: 0.5s; }
+.hero-slider__line--6 { transform: translate(-50%, -100%) rotate(300deg); animation-delay: 0.4s; }
+
+@keyframes heroLinePulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.9; }
+}
+
+/* Sous-titre style badge (ex. "RAPIDITÉ ET EFFICACITÉ") */
+.hero-slider__subtitle-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--radius-full);
+  color: var(--color-secondary);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  animation: heroSubtitleBadgeIn 0.8s ease-out, heroFloat 5s ease-in-out 1s infinite;
+}
+
+.hero-slider__subtitle-badge svg {
+  color: var(--color-secondary);
+  flex-shrink: 0;
+}
+
+@keyframes heroSubtitleBadgeIn {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.hero-slider__float-icon {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(249, 115, 22, 0.6);
+  border-radius: var(--radius-md);
+  color: rgba(255, 255, 255, 0.85);
+  animation: heroIconFloat 4s ease-in-out infinite;
+}
+
+.hero-slider__float-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.hero-slider__float-icon--tr {
+  top: 20%;
+  right: 8%;
+  animation-delay: 0.5s;
+}
+
+.hero-slider__float-icon--bl {
+  bottom: 25%;
+  left: 6%;
+  animation-delay: 1s;
+}
+
+@keyframes heroIconFloat {
+  0%, 100% { transform: translateY(0); opacity: 0.9; }
+  50% { transform: translateY(-8px); opacity: 1; }
+}
+
 .hero-slider__content {
   position: absolute;
   top: 0;
@@ -262,18 +399,6 @@ onUnmounted(() => {
   align-items: center;
 }
 
-.hero-slider__subtitle {
-  display: inline-block;
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--color-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: var(--spacing-md);
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  text-align: center;
-}
 
 .hero-slider__title {
   font-size: clamp(2.5rem, 6vw, 4rem);
@@ -379,6 +504,30 @@ onUnmounted(() => {
 @media (max-width: 768px) {
   .hero-slider {
     min-height: 500px;
+  }
+
+  .hero-slider__subtitle-badge {
+    font-size: 0.7rem;
+    padding: var(--spacing-xs) var(--spacing-md);
+    letter-spacing: 0.08em;
+  }
+
+  .hero-slider__float-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-slider__float-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hero-slider__float-icon--tr {
+    right: 4%;
+  }
+
+  .hero-slider__float-icon--bl {
+    left: 4%;
   }
   
   .hero-slider__content {

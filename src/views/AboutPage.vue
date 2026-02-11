@@ -21,8 +21,9 @@ const appStore = useAppStore()
     />
 
     <!-- Presentation Section -->
-    <section class="section">
+    <section class="section section-animate">
       <div class="container">
+        <span class="section-label">{{ t('about.breadcrumb') }}</span>
         <div class="presentation-grid">
           <div class="presentation-content">
             <h2 class="section-title text-left">{{ t('about.presentation.title') }}</h2>
@@ -44,24 +45,27 @@ const appStore = useAppStore()
     </section>
 
     <!-- History Section -->
-    <section class="section">
+    <section class="section section-animate">
       <div class="container">
+        <span class="section-label">Histoire</span>
         <h2 class="section-title">{{ t('about.history.title') }}</h2>
         <Timeline />
       </div>
     </section>
 
     <!-- Values Section -->
-    <section class="section">
+    <section class="section section-animate">
       <div class="container">
+        <span class="section-label">Valeurs</span>
         <h2 class="section-title">{{ t('about.values.title') }}</h2>
         <ValuesGrid />
       </div>
     </section>
 
     <!-- Team Section -->
-    <section class="section bg-gray">
+    <section class="section bg-gray section-animate">
       <div class="container">
+        <span class="section-label">Équipe</span>
         <h2 class="section-title">{{ t('about.team.title') }}</h2>
         <div class="team-grid">
           <TeamMember 
@@ -74,9 +78,10 @@ const appStore = useAppStore()
     </section>
 
     <!-- Quality HSE Section -->
-    <section class="section">
+    <section class="section section-animate">
       <div class="container">
         <div class="quality-hse">
+          <span class="section-label">Qualité & HSE</span>
           <h2 class="section-title">{{ t('about.quality.title') }}</h2>
           <p class="quality-description">{{ qualityHSE[`description_${appStore.locale}`] }}</p>
           <div class="certifications">
@@ -95,6 +100,21 @@ const appStore = useAppStore()
 </template>
 
 <style scoped>
+.section-label {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--spacing-sm);
+}
+
+.section-animate .container {
+  animation: fadeInUp 0.6s ease-out;
+}
+
 .presentation-intro {
   font-size: 1.125rem;
   color: var(--color-gray);

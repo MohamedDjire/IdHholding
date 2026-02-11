@@ -1,4 +1,7 @@
 {
+  "header": {
+    "badge": "Industrial transport leader"
+  },
   "nav": {
     "home": "HOME",
     "homeSubtitle": "WELCOME TO ID HOLDING",
@@ -14,7 +17,8 @@
   "home": {
     "hero": {
       "title": "Industrial Transport Leader",
-      "subtitle": "Excellence and Reliability"
+      "subtitle": "Excellence and Reliability",
+      "scrollDown": "Discover"
     },
     "services": {
       "title": "What We Do",

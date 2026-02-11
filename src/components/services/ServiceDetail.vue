@@ -23,7 +23,7 @@ const rotatingWords = ['fiables', 'ponctuelles', 'sécurisées', 'efficaces', 'p
 </script>
 
 <template>
-  <div :class="['service-detail', { 'service-detail--reverse': reverse }]">
+  <div :id="service.slug" :class="['service-detail', { 'service-detail--reverse': reverse }]">
     <div class="service-detail__image">
       <img :src="service.image" :alt="service[`title_${appStore.locale}`]" />
     </div>
