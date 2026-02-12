@@ -45,6 +45,11 @@
     "partners": {
       "title": "Nos Partenaires",
       "subtitle": "Ils nous font confiance"
+    },
+    "offices": {
+      "subtitle": "NOS LOCAUX",
+      "title": "Découvrez Nos Installations",
+      "description": "Des locaux modernes et professionnels pour vous accueillir dans les meilleures conditions."
     }
   },
   "about": {

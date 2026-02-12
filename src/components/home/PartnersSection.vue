@@ -8,8 +8,10 @@ const { t } = useI18n()
 <template>
   <section class="partners-section section">
     <div class="container">
-      <span class="section-label">{{ t('home.partners.title') }}</span>
-      <h2 class="section-title">{{ t('home.partners.subtitle') }}</h2>
+      <div class="partners-header">
+        <span class="section-label">{{ t('home.partners.title') }}</span>
+        <h2 class="section-title">{{ t('home.partners.subtitle') }}</h2>
+      </div>
 
       <div class="partners-grid">
         <a 
@@ -31,6 +33,11 @@ const { t } = useI18n()
 .partners-section {
   background-color: var(--color-white);
   animation: fadeIn 0.8s ease-out;
+}
+
+.partners-header {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
 }
 
 .section-label {
