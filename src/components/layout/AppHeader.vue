@@ -45,20 +45,31 @@ onMounted(() => {
         </router-link>
       </nav>
 
-      <!-- Dashboard Link -->
+      <!-- Dashboard Link (desktop only) -->
       <a 
         href="mailto:contact@idholding-international.com" 
-        class="header__dashboard"
+        class="header__dashboard hide-mobile"
         target="_blank"
         rel="noopener noreferrer"
       >
         Dashboard
       </a>
 
-      <!-- Language Switcher -->
-      <div class="header__lang">
+      <!-- Language Switcher (desktop only) -->
+      <div class="header__lang hide-mobile">
         <LanguageSwitcher />
       </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button 
+        class="header__hamburger show-mobile"
+        @click="appStore.toggleMobileMenu"
+        aria-label="Ouvrir le menu"
+      >
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </button>
     </div>
   </header>
 </template>
@@ -200,17 +211,55 @@ onMounted(() => {
   }
 }
 
+/* Hamburger Button */
+.header__hamburger {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 50px;
+  height: 100%;
+  padding: 0 var(--spacing-md);
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.header__hamburger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-white);
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+}
+
+.header__hamburger:hover .header__hamburger-line {
+  background-color: var(--color-secondary);
+}
+
 @media (max-width: 768px) {
   .header {
-    height: 70px;
+    height: 64px;
+  }
+  
+  .header__container {
+    padding-right: 0;
   }
   
   .header__logo {
     padding: 0 var(--spacing-sm);
+    flex: 1;
   }
   
   .header__logo-img {
-    height: 50px;
+    height: 44px;
+  }
+  
+  .header__hamburger {
+    display: flex;
   }
 }
 </style>

@@ -78,4 +78,29 @@ function setLanguage(lang) {
   color: var(--color-white);
   font-weight: 700;
 }
+
+/* Mobile menu context: horizontal layout */
+.mobile-menu__footer .lang-switcher {
+  flex-direction: row;
+  gap: var(--spacing-sm);
+  height: auto;
+}
+
+.mobile-menu__footer .lang-switcher .lang-switcher__btn {
+  color: var(--color-black);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-md);
+  width: 50px;
+  height: 40px;
+}
+
+.mobile-menu__footer .lang-switcher .lang-switcher__btn:not(:last-child)::after {
+  display: none;
+}
+
+.mobile-menu__footer .lang-switcher .lang-switcher__btn--active {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border-color: var(--color-secondary);
+}
 </style>

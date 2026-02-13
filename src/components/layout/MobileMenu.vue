@@ -63,6 +63,18 @@ watch(
           </router-link>
         </div>
 
+        <div class="mobile-menu__actions">
+          <a 
+            href="mailto:contact@idholding-international.com" 
+            class="mobile-menu__dashboard"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Dashboard
+          </a>
+        </div>
+
         <div class="mobile-menu__footer">
           <LanguageSwitcher />
         </div>
@@ -86,13 +98,17 @@ watch(
   position: fixed;
   top: 0;
   right: 0;
-  width: 280px;
+  width: 300px;
+  max-width: 85vw;
   height: 100vh;
+  height: 100dvh;
   background-color: var(--color-white);
   z-index: var(--z-modal);
   display: flex;
   flex-direction: column;
   box-shadow: var(--shadow-xl);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mobile-menu__header {
@@ -146,11 +162,38 @@ watch(
   color: var(--color-secondary);
 }
 
+.mobile-menu__actions {
+  padding: 0 var(--spacing-lg) var(--spacing-lg);
+}
+
+.mobile-menu__dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+}
+
+.mobile-menu__dashboard:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
 .mobile-menu__footer {
   padding: var(--spacing-lg);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
+  margin-top: auto;
 }
 
 /* Transitions */

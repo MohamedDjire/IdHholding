@@ -177,4 +177,33 @@ const appStore = useAppStore()
   background-color: var(--color-secondary);
   transform: translateY(-3px);
 }
+
+@media (max-width: 768px) {
+  .contact-info {
+    padding: var(--spacing-xl);
+  }
+  
+  .contact-info__title {
+    font-size: 1.25rem;
+  }
+  
+  .contact-info__icon {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .contact-info__content h4 {
+    font-size: 0.9375rem;
+  }
+  
+  .contact-info__content a,
+  .contact-info__content p {
+    font-size: 0.875rem;
+    word-break: break-word;
+  }
+  
+  .social-links {
+    flex-wrap: wrap;
+  }
+}
 </style>

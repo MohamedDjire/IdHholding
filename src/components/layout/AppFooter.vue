@@ -221,18 +221,54 @@ const menuLinks = [
 @media (max-width: 768px) {
   .footer__main {
     grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-2xl) 0;
   }
   
   .footer__col--info {
     grid-column: span 1;
+    padding-right: 0;
   }
   
   .footer__col {
     text-align: center;
   }
   
+  .footer__logo {
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .footer__description {
+    font-size: 0.875rem;
+  }
+  
   .footer__social {
     justify-content: center;
+  }
+  
+  .footer__social a {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .footer__title {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .footer__links a,
+  .footer__links span {
+    font-size: 0.875rem;
+  }
+  
+  .footer__bottom {
+    padding: var(--spacing-md) 0;
+  }
+  
+  .footer__bottom p {
+    font-size: 0.75rem;
   }
 }
 </style>

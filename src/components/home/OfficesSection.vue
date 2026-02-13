@@ -184,16 +184,43 @@ const offices = [
 }
 
 @media (max-width: 768px) {
+  .offices-header {
+    margin: 0 auto var(--spacing-2xl);
+  }
+  
+  .offices-title {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+  
+  .offices-description {
+    font-size: 1rem;
+  }
+
   .offices-grid {
     grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
   }
   
   .office-image {
-    height: 300px;
+    height: 220px;
+  }
+  
+  .office-overlay {
+    transform: translateY(0);
+    opacity: 1;
+    padding: var(--spacing-lg);
   }
   
   .office-overlay h3 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
+  }
+  
+  .office-content {
+    padding: var(--spacing-lg);
+  }
+  
+  .office-content p {
+    font-size: 0.9375rem;
   }
 }
 </style>

@@ -345,14 +345,43 @@ const badgeText = computed(() => props.badge || t('header.badge'))
 
 @media (max-width: 768px) {
   .page-header {
-    min-height: 280px;
+    min-height: 240px;
+    margin-top: 64px;
   }
   
   .page-header__content {
-    padding: var(--spacing-2xl) 0;
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .page-header__title {
+    font-size: clamp(1.5rem, 6vw, 2.25rem);
+    letter-spacing: 0.03em;
+  }
+  
+  .page-header__subtitle {
+    font-size: 0.9375rem;
+  }
+  
+  .page-header__breadcrumb {
+    font-size: 0.8125rem;
+    flex-wrap: wrap;
   }
   
   .page-header__glow {
+    display: none;
+  }
+  
+  .page-header__badge {
+    font-size: 0.65rem;
+    padding: 4px var(--spacing-md);
+    top: var(--spacing-md);
+  }
+  
+  .page-header__float-icon {
+    display: none;
+  }
+  
+  .page-header__lines {
     display: none;
   }
 }

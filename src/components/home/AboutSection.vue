@@ -237,4 +237,37 @@ const { t } = useI18n()
     padding-left: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .about-grid {
+    gap: var(--spacing-xl);
+  }
+  
+  .about-badge {
+    bottom: var(--spacing-md);
+    right: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+  
+  .about-badge__number {
+    font-size: 1.5rem;
+  }
+  
+  .about-badge__text {
+    font-size: 0.625rem;
+  }
+  
+  .about-title {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+  
+  .about-description {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+  }
+  
+  .about-list li {
+    font-size: 0.9375rem;
+  }
+}
 </style>
