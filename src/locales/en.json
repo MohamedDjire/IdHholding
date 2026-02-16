@@ -12,7 +12,9 @@
     "fleet": "OUR FLEET",
     "fleetSubtitle": "OUR VEHICLES",
     "contact": "CONTACTS",
-    "contactSubtitle": "ALWAYS AT YOUR SERVICE"
+    "contactSubtitle": "ALWAYS AT YOUR SERVICE",
+    "groupe": "GROUP",
+    "groupeSubtitle": "OUR SUBSIDIARIES"
   },
   "home": {
     "hero": {
@@ -128,5 +130,37 @@
     "learnMore": "Learn more",
     "contactUs": "Contact us",
     "home": "Home"
+  },
+  "groupe": {
+    "pageTitle": "Our Subsidiaries",
+    "pageSubtitle": "The companies of the ID Holding group",
+    "breadcrumb": "Group",
+    "intro": "ID Holding International is a growing group that brings together several subsidiaries specialized in strategic sectors. Discover our partners and subsidiaries that constitute the strength of our group.",
+    "partners": "Our Partners",
+    "visitSite": "Visit website",
+    "comingSoon": "Coming soon",
+    "discover": "Discover",
+    "sada": {
+      "name": "SADA SARL",
+      "description": "SADA SARL is a partner company of the ID Holding International group. Specialized in its areas of expertise, SADA SARL supports the group in its growth and development."
+    },
+    "idPetrolium": {
+      "name": "ID Petrolium",
+      "description": "ID Petrolium is a subsidiary of the ID Holding group specialized in the distribution and sale of petroleum products through a network of modern service stations. The company is currently being established.",
+      "pageTitle": "ID Petrolium",
+      "pageSubtitle": "Petroleum products distribution",
+      "mission": "Our Mission",
+      "missionText": "ID Petrolium's mission is to become a major player in petroleum product distribution in West Africa, offering superior quality services through a network of modern and accessible service stations.",
+      "vision": "Our Vision",
+      "visionText": "Create a reference network of service stations, recognized for the quality of its products, the excellence of its customer service and its commitment to sustainable development.",
+      "services": "Our Services",
+      "service1": "Fuel sales (gasoline, diesel, kerosene)",
+      "service2": "Modern and secure service stations",
+      "service3": "Distribution of lubricants and motor oils",
+      "service4": "Additional services (car wash, convenience store, food)",
+      "status": "Project Status",
+      "statusText": "ID Petrolium is currently being established. Our teams are actively working on setting up infrastructure and obtaining necessary authorizations. Launch is expected soon.",
+      "backToGroupe": "Back to Group"
+    }
   }
 }

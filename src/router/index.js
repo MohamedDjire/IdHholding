@@ -41,6 +41,22 @@ const routes = [
     meta: {
       title: 'Contactez-nous - ID Holding International'
     }
+  },
+  {
+    path: '/groupe',
+    name: 'Groupe',
+    component: () => import('@/views/GroupePage.vue'),
+    meta: {
+      title: 'Nos Filiales - ID Holding International'
+    }
+  },
+  {
+    path: '/groupe/id-petrolium',
+    name: 'IDPetrolium',
+    component: () => import('@/views/IDPetroliumPage.vue'),
+    meta: {
+      title: 'ID Petrolium - ID Holding International'
+    }
   }
 ]
 

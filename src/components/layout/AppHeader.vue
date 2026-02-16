@@ -12,6 +12,7 @@ const navLinks = [
   { path: '/a-propos', key: 'nav.about', subtitle: 'nav.aboutSubtitle' },
   { path: '/activites', key: 'nav.services', subtitle: 'nav.servicesSubtitle' },
   { path: '/parc-automobile', key: 'nav.fleet', subtitle: 'nav.fleetSubtitle' },
+  { path: '/groupe', key: 'nav.groupe', subtitle: 'nav.groupeSubtitle' },
   { path: '/contacts', key: 'nav.contact', subtitle: 'nav.contactSubtitle' }
 ]
 
@@ -39,7 +40,7 @@ onMounted(() => {
           :key="link.path"
           :to="link.path"
           class="header__nav-link"
-          :class="{ 'header__nav-link--active': $route.path === link.path }"
+          :class="{ 'header__nav-link--active': link.path === '/' ? $route.path === '/' : $route.path.startsWith(link.path) }"
         >
           <span class="header__nav-link-main">{{ t(link.key) }}</span>
         </router-link>

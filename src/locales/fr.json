@@ -12,7 +12,9 @@
     "fleet": "PARC AUTOMOBILE",
     "fleetSubtitle": "NOTRE FLOTTE",
     "contact": "CONTACTS",
-    "contactSubtitle": "TOUJOURS À VOTRE ÉCOUTE"
+    "contactSubtitle": "TOUJOURS À VOTRE ÉCOUTE",
+    "groupe": "GROUPE",
+    "groupeSubtitle": "NOS FILIALES"
   },
   "home": {
     "hero": {
@@ -128,5 +130,37 @@
     "learnMore": "En savoir plus",
     "contactUs": "Contactez-nous",
     "home": "Accueil"
+  },
+  "groupe": {
+    "pageTitle": "Nos Filiales",
+    "pageSubtitle": "Les entreprises du groupe ID Holding",
+    "breadcrumb": "Groupe",
+    "intro": "ID Holding International est un groupe en pleine expansion qui regroupe plusieurs filiales specialisees dans des secteurs strategiques. Decouvrez nos partenaires et filiales qui constituent la force de notre groupe.",
+    "partners": "Nos Partenaires",
+    "visitSite": "Visiter le site",
+    "comingSoon": "En cours de creation",
+    "discover": "Decouvrir",
+    "sada": {
+      "name": "SADA SARL",
+      "description": "SADA SARL est une entreprise partenaire du groupe ID Holding International. Specialisee dans ses domaines d'expertise, SADA SARL accompagne le groupe dans sa croissance et son developpement."
+    },
+    "idPetrolium": {
+      "name": "ID Petrolium",
+      "description": "ID Petrolium est une filiale du groupe ID Holding specialisee dans la distribution et la vente de produits petroliers a travers un reseau de stations-service modernes. L'entreprise est actuellement en cours de creation.",
+      "pageTitle": "ID Petrolium",
+      "pageSubtitle": "Distribution de produits petroliers",
+      "mission": "Notre Mission",
+      "missionText": "ID Petrolium a pour mission de devenir un acteur majeur de la distribution de produits petroliers en Afrique de l'Ouest, en offrant des services de qualite superieure a travers un reseau de stations-service modernes et accessibles.",
+      "vision": "Notre Vision",
+      "visionText": "Creer un reseau de stations-service de reference, reconnu pour la qualite de ses produits, l'excellence de son service client et son engagement envers le developpement durable.",
+      "services": "Nos Services",
+      "service1": "Vente de carburant (essence, gasoil, petrole)",
+      "service2": "Stations-service modernes et securisees",
+      "service3": "Distribution de lubrifiants et huiles moteur",
+      "service4": "Services annexes (lavage, boutique, restauration)",
+      "status": "Statut du projet",
+      "statusText": "ID Petrolium est actuellement en cours de creation. Nos equipes travaillent activement a la mise en place des infrastructures et a l'obtention des autorisations necessaires. Le lancement est prevu prochainement.",
+      "backToGroupe": "Retour au Groupe"
+    }
   }
 }

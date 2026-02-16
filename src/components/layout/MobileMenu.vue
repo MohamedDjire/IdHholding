@@ -14,6 +14,7 @@ const navLinks = [
   { path: '/a-propos', key: 'nav.about', icon: 'info' },
   { path: '/activites', key: 'nav.services', icon: 'truck' },
   { path: '/parc-automobile', key: 'nav.fleet', icon: 'car' },
+  { path: '/groupe', key: 'nav.groupe', icon: 'building' },
   { path: '/contacts', key: 'nav.contact', icon: 'phone' }
 ]
 
@@ -57,7 +58,7 @@ watch(
             :key="link.path" 
             :to="link.path"
             class="mobile-menu__link"
-            :class="{ 'mobile-menu__link--active': route.path === link.path }"
+            :class="{ 'mobile-menu__link--active': link.path === '/' ? route.path === '/' : route.path.startsWith(link.path) }"
           >
             {{ t(link.key) }}
           </router-link>
