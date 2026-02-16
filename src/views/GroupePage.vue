@@ -86,6 +86,13 @@ const partners = [
               <h3 class="partner-card__name">{{ t('groupe.sada.name') }}</h3>
               <p class="partner-card__description">{{ t('groupe.sada.description') }}</p>
             </div>
+            <div class="partner-card__image-preview">
+              <img 
+                src="/images/groupe/sada-sarl.jpg" 
+                alt="SADA SARL - Distribution de produits alimentaires"
+                loading="lazy"
+              />
+            </div>
             <div class="partner-card__footer">
               <span class="partner-card__cta">
                 {{ t('groupe.visitSite') }}
