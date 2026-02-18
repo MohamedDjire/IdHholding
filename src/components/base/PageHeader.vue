@@ -84,7 +84,7 @@ const badgeText = computed(() => props.badge || t('header.badge'))
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 80px;
+  margin-top: 90px;
   overflow: hidden;
 }
 

@@ -73,7 +73,7 @@ ID-Holding/
 
 Les dossiers sont créés dans `public/images/`, mais vous devez ajouter les images :
 
-- **Logo** : `public/images/logo/id-holding-logo.png`
+- **Logo** : `public/images/logo/id-holding-logo.jpeg`
 - **Slider** : 3 images dans `public/images/slider/`
 - **Services** : 3 images dans `public/images/services/`
 - **Véhicules** : 6 images dans `public/images/vehicles/`

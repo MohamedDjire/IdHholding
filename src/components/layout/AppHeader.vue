@@ -27,7 +27,7 @@ onMounted(() => {
       <!-- Logo -->
       <router-link to="/" class="header__logo">
         <img 
-          src="/images/logo/id-holding-logo.png" 
+          src="/images/logo/id-holding-logo.jpeg" 
           alt="ID Holding International"
           class="header__logo-img"
         />
@@ -83,7 +83,7 @@ onMounted(() => {
   right: 0;
   z-index: var(--z-fixed);
   background-color: var(--color-primary);
-  height: 80px;
+  height: 90px;
   overflow: hidden;
 }
 
@@ -96,24 +96,22 @@ onMounted(() => {
   width: 100%;
 }
 
-/* Logo */
+/* Logo – taille du carré rouge */
 .header__logo {
   display: flex;
   align-items: center;
   height: 100%;
   padding: 0 var(--spacing-lg);
-  padding-right: calc(var(--spacing-lg) + 8px);
   text-decoration: none;
 }
 
 .header__logo-img {
-  height: 70px;
-  width: auto;
+  height: 88px;
+  width: 88px;
   object-fit: contain;
   object-position: center;
   display: block;
-  max-width: 200px;
-  padding: 6px 4px;
+  padding: 0;
 }
 
 /* Navigation - Center */
@@ -203,8 +201,9 @@ onMounted(() => {
   }
   
   .header__logo-img {
-    height: 60px;
-    padding: 5px 3px;
+    height: 76px;
+    width: 76px;
+    padding: 0;
   }
   
   .header__nav-link {
@@ -260,8 +259,9 @@ onMounted(() => {
   }
   
   .header__logo-img {
-    height: 44px;
-    padding: 4px 2px;
+    height: 64px;
+    width: 64px;
+    padding: 0;
   }
   
   .header__hamburger {

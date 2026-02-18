@@ -31,7 +31,7 @@ const menuLinks = [
       <!-- Company Info -->
       <div class="footer__col footer__col--info">
         <img 
-          src="/images/logo/id-holding-logo.png" 
+          src="/images/logo/id-holding-logo.jpeg" 
           alt="ID Holding International"
           class="footer__logo"
         />
@@ -131,15 +131,13 @@ const menuLinks = [
 }
 
 .footer__logo {
-  height: 80px;
-  width: auto;
-  max-width: 250px;
+  height: 88px;
+  width: 88px;
   margin-bottom: var(--spacing-lg);
   object-fit: contain;
   object-position: center;
   display: block;
-  padding: 6px 4px;
-  margin-right: 8px;
+  padding: 0;
 }
 
 .footer__description {
@@ -238,10 +236,11 @@ const menuLinks = [
   }
   
   .footer__logo {
-    height: 60px;
+    height: 72px;
+    width: 72px;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px 3px;
+    padding: 0;
   }
   
   .footer__description {
