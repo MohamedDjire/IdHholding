@@ -102,6 +102,7 @@ onMounted(() => {
   align-items: center;
   height: 100%;
   padding: 0 var(--spacing-lg);
+  padding-right: calc(var(--spacing-lg) + 8px);
   text-decoration: none;
 }
 
@@ -109,8 +110,10 @@ onMounted(() => {
   height: 70px;
   width: auto;
   object-fit: contain;
+  object-position: center;
   display: block;
   max-width: 200px;
+  padding: 6px 4px;
 }
 
 /* Navigation - Center */
@@ -201,6 +204,7 @@ onMounted(() => {
   
   .header__logo-img {
     height: 60px;
+    padding: 5px 3px;
   }
   
   .header__nav-link {
@@ -257,6 +261,7 @@ onMounted(() => {
   
   .header__logo-img {
     height: 44px;
+    padding: 4px 2px;
   }
   
   .header__hamburger {

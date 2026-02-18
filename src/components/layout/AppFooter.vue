@@ -136,7 +136,10 @@ const menuLinks = [
   max-width: 250px;
   margin-bottom: var(--spacing-lg);
   object-fit: contain;
+  object-position: center;
   display: block;
+  padding: 6px 4px;
+  margin-right: 8px;
 }
 
 .footer__description {
@@ -238,6 +241,7 @@ const menuLinks = [
     height: 60px;
     margin-left: auto;
     margin-right: auto;
+    padding: 5px 3px;
   }
   
   .footer__description {
